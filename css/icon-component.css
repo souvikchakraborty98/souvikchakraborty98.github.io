@@ -139,9 +139,6 @@ text-decoration: none;
 .hi-icon-star:before {
 	content: "\e014";
 }
-.hi-icon-github:before {
-	content: "\e016";
-}
 
 /* Effect 1 */
 .hi-icon-effect-1 .hi-icon {

@@ -1,5 +1,5 @@
 /*
-  Theme Name: Vlava
+  Theme Name: myWeb
   Theme URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
   Author: BootstrapMade.com
   Author URL: https://bootstrapmade.com
@@ -331,7 +331,7 @@ section.section {
 	background-image: url(../img/parallax/img1.jpg);
 }
 
-#testimonials{
+#timeline{
 	background-image: url(../img/parallax/img3.jpg);
 }
 /*===========================
@@ -922,8 +922,8 @@ a.scrollup:hover{
 .social-network a.icoRss:hover {
 	background-color: #F56505;
 }
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+.social-network a.icoGithub:hover {
+	background-color:rgb(0, 0, 0);
 }
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
@@ -937,7 +937,7 @@ a.scrollup:hover{
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoRss:hover i, .social-network a.icoGithub:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
