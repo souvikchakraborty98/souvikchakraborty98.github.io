@@ -85,8 +85,8 @@
   // fancybox
   jQuery(".fancybox").fancybox();
 
-  //testimonial
-  jQuery('.testimonials-slider').flexslider({
+  //timeline
+  jQuery('.timeline-slider').flexslider({
     animation: "slide",
     directionNav: true,
     controlNav: true,
@@ -157,7 +157,7 @@
   }
 
 
-  if (isMobile == false && ($('#parallax1').length || isMobile == false && $('#parallax2').length || isMobile == false && $('#testimonials').length)) {
+  if (isMobile == false && ($('#parallax1').length || isMobile == false && $('#parallax2').length || isMobile == false && $('#timeline').length)) {
 
 
     $(window).stellar({

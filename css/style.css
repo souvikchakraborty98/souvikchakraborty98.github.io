@@ -24,6 +24,9 @@ body {
 .clear {
 	clear: both;
 }
+li {
+    list-style-type: none;
+}
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, sans-serif, Arial;
@@ -694,22 +697,22 @@ nav#filter a {
 
 
 /*===========================
-  --- Testimonial ----
+  --- timeline ----
 =========================== */
-#testimonals {
-	padding-top: 20px;
+#timeline {
+	padding-top: 180px;
 	padding-bottom:40px;
 	position:relative;
 	margin-top:50px;
 }
-.testimonial i {
+.timeline i {
 	color: #fff;
 }
-.testimonial span.author {
+.timeline span.author {
 	color: #fff;
 }
 
-.testimonial h5 {
+.timeline h5 {
 	color: #fff;
 	font-size: 18px;
 	font-family: Georgia, sans-serif;
@@ -836,11 +839,6 @@ div.cform-response-output {
 
 #sendmessage.show, #errormessage.show, .show {
 	display:block;
-}
-
-/* google map */
-#google-map {
-  height: 315px;
 }
 
 /*====================
