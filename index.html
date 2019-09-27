@@ -17,9 +17,20 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="skin/default.css">
 
+  <script>
+      
+      $(window).load(function() {
+        
+        $("#loader").animate({
+          top: -200
+        }, 1500);
+      });
+    </script>	
+
 </head>
 
 <body>
+  <img src="js\fancybox\fancybox_loading_402x.gif" id="loader">
   <section id="header" class="appear"></section>
   <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(5, 42, 62, 1);">
     <div class="container">
@@ -420,6 +431,7 @@
   <script src="js/jquery.flexslider-min.js"></script>
   <script src="js/typewriter.js"></script>
   <script src="js/smoothscroller.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
 
 
   <script src="contactform/contactform.js"></script>
