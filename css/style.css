@@ -725,13 +725,15 @@ nav#filter a {
 	color: #fff;
 }
 .timeline span.author {
+	font-size: 18px;
 	color: #fff;
 }
 
 .timeline h5 {
-	color: #fff;
-	font-size: 18px;
-	font-family: Georgia, sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	font-family:Georgia, sans-serif;
+	font-weight: bolder;
 	line-height: 1.5em;
 }
 
