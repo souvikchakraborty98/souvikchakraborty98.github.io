@@ -363,7 +363,7 @@ section.section {
 	height: 100px;
 	background-color: rgba(0,0,0,0.3);
 	display: block;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	text-align: center;
 	margin-bottom: 0;
 	padding-bottom:0;
@@ -880,6 +880,7 @@ section#footer {
 	background-color:rgba(5, 42, 62, 1);
 	margin: 0;
 	color: #fff;
+	overflow: hidden;
 }
 
 section#footer .copyright {
