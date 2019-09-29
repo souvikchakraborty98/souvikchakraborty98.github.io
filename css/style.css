@@ -349,11 +349,11 @@ section.section {
 ============================= */
 
 #parallax1{
-	background-image: url(../img/parallax/img1.jpg);
+	background-image: url(../img/parallax/img1.webp);
 }
 
 #timeline{
-	background-image: url(../img/parallax/img3.jpg);
+	background-image: url(../img/parallax/img3.webp);
 }
 /*===========================
   --- Header & menu ----
@@ -434,7 +434,7 @@ section.section {
   width: 100%;
   height: 60vh;
   position: relative;
-	background: url(../img/intro-background.jpg) top center;
+	background: url(../img/intro-background.webp) top center;
   background-size: cover;
 }
 
