@@ -64,13 +64,31 @@
   <!-- services -->
   <section id="section-services" class="section pad-bot30 bg-white">
     <div class="container">
-
       <div class="row mar-bot40">
         <div class="col-lg-4">
           <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
             <div class="float-left mar-right20">
-              <a href="https://drive.google.com/file/d/1qV5ygeulwjFWM9AgOJTJsT66Asgmkan9/view?usp=sharing" target="_blank" class="hi-icon hi-icon-list">Resume</a>
-            </div>
+                <a href="#" data-toggle="modal" data-target="#myModal" target="_blank" class="hi-icon hi-icon-list">Resume</a>
+              <!--modal-->
+                 <div class="modal fade" id="myModal" role="dialog">
+                   <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Resume</h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://drive.google.com/file/d/1qV5ygeulwjFWM9AgOJTJsT66Asgmkan9/preview" width="100%" height="460" frameborder="0" allowtransparency="true"></iframe>        
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              <!--/modal-->
+
+        </div>
           </div>
           <h3 class="text-bold">Resume</h3>
           <p>Have a quick look at my resume!</p>
@@ -424,6 +442,7 @@
   <script src="js/smoothscroller.min.js"></script>
   <script src="js/loadingoverlay.min.js"></script>
   <script src="js/main.js"></script>
+  
 
 
   <!-- <script src="contactform/contactform.js"></script> -->

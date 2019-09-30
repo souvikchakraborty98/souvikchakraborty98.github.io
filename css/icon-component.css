@@ -395,7 +395,7 @@ text-decoration: none;
 .no-touch .hi-icon-effect-5 .hi-icon:hover {
 	background: rgba(255,255,255,1);
 	color: #fff;
-	box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+	box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .no-touch .hi-icon-effect-5a .hi-icon:hover:before {
