@@ -1,500 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="google-site-verification" content="wQo7ktIibl0xY0T8jlDwZVjR9facvN_FcKa0sIBVs9U" />
-  <title>Souvik Chakraborty | Maker of stuff</title>
-  <script>
-      document.onreadystatechange = function() { 
-        if (document.readyState != "complete") { 
-             document.querySelector("body").style.visibility = "hidden"; 
-             document.querySelector(".loader").style.visibility = "visible"; 
-        } else { 
-             document.querySelector(".loader").style.display = "none"; 
-            document.querySelector("body").style.visibility = "visible"; 
-        } 
-    };  
-     </script>
-  <!--souvikchakraborty98-->
-  <link rel = "icon" href ="https://i.imgur.com/Ufikqu3.png" type = "image/x-icon">
-  <meta name="description" content="About Souvik Chakraborty">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen">
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="skin/default.css">
+  <title>Souvik Chakraborty - Portfolio</title>
+  <link id="dynamic-favicon" rel="icon" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="loader">
-        <img src="img/preloadersvg.svg" alt="Loading..." />
-    </div>
-  <script>
-    console.log("What you looking for, huh?:P");
-  </script>
-  <section id="header" class="appear"></section>
-  <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(5, 42, 62, 1);">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      	  <span class="fa fa-bars color-white"></span>
-        </button>
-        <div class="navbar-logo">
-          <a href="index.html"><img data-0="width:180px;" data-300=" width:104px;" src="img/logo.webp" alt=""></a>
-        </div>
+
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <div class="container">
+    <div class="card about-section">
+      <div class="profile-img">
+        <img src="img/profile.webp" alt="Souvik Chakraborty">
       </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#section-about">About Me</a></li>
-          <li><a href="#section-works">Projects</a></li>
-          <li><a href="#section-contact">Contact</a></li>
+      <h1>
+        Souvik Chakraborty
+        <a href="https://www.linkedin.com/in/souvik-chakraborty-68b803129/" class="linkedin-link" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </h1>
+      <p class="job-title">Senior Product Engineer at TCS Research</p>
+      <a href="pdf/myResume.pdf" target="_blank" class="resume-btn">
+        <i class="fas fa-download"></i> Resume
+      </a>
+    </div>
+
+
+    <div class="card">
+      <h1><i class="fas fa-tools" aria-hidden="true"></i> Skills</h1>
+      <div class="skills-section">
+        <h2>Backend</h2>
+        <ul>
+          <li><i class="fas fa-code" aria-hidden="true"></i> Java, Spring Boot, Microservices</li>
+        </ul>
+
+        <h2>Messaging</h2>
+        <ul>
+          <li><i class="fas fa-envelope" aria-hidden="true"></i> RabbitMQ</li>
+        </ul>
+
+        <h2>Database</h2>
+        <ul>
+          <li><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</li>
+        </ul>
+
+        <h2>Frontend</h2>
+        <ul>
+          <li><i class="fas fa-paint-brush" aria-hidden="true"></i> Angular</li>
+        </ul>
+
+        <h2>Cloud & AI</h2>
+        <ul>
+          <li><i class="fas fa-cloud" aria-hidden="true"></i> Microsoft Azure</li>
+          <li><i class="fas fa-brain" aria-hidden="true"></i> Microsoft Semantic Kernel</li>
+        </ul>
+
+        <h2>Other</h2>
+        <ul>
+          <li><i class="fas fa-project-diagram" aria-hidden="true"></i> Camunda BPM, Linux</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <section id="intro">
-    <div class="intro-content">
-      <h2>
-        <a class="typewrite" data-period="2000" data-type='[ "Hi,I&#39;m Souvik!", "I Make Stuff.", "Evolving From A Noob.&#128539;", "Love Doges.&#128525;" ]'>
-          <span class="wrap"></span>
-        </a>
-      </h2>
-      <div>
-        <a href="#section-services" class="btn-get-started scrollto">Tell me more</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- services -->
-  <section id="section-services" class="section pad-bot30 bg-white">
-    <div class="container">
-      <div class="row mar-bot40">
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-                <a href="#" data-toggle="modal" data-target="#myModal" target="_blank" class="hi-icon hi-icon-list">Resume</a>
-              <!--modal-->
-                 <div class="modal fade" id="myModal" role="dialog">
-                   <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Resume</h4>
-                        </div>
-                        <div class="modal-body">
-                            <iframe src="pdf/myResume.pdf" width="100%" height="460" frameborder="0" allowtransparency="true"></iframe>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              <!--/modal-->
-
-        </div>
-          </div>
-          <h3 class="text-bold">Resume</h3>
-          <p>Have a quick look at my resume!</p>
-
-          <div class="clear"></div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-              <a href="#timeline" onclick="smoothScroll('timeline');" class="hi-icon hi-icon-clock">timeline</a>
-            </div>
-          </div>
-          <h3 class="text-bold">Timeline</h3>
-          <p>Take a look at my dabbles!</p>
-
-          <div class="clear"></div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-              <a href="https://github.com/souvikchakraborty98" target="_blank" class="hi-icon hi-icon-archive">Repos</a>
-            </div>
-          </div>
-          <h3 class="text-bold">Repos</h3>
-          <p>Show me some code!</p>
-
-          <div class="clear"></div>
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-              <a href="#section-works" onclick="smoothScroll('section-works');" class="hi-icon hi-icon-bookmark">projects</a>
-            </div>
-          </div>
-          <h3 class="text-bold">Projects</h3>
-          <p>Things I have tinkered with.</p>
-          <div class="clear"></div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-                <a href="#section-about" onclick="smoothScroll('section-about');" class="hi-icon hi-icon-star">about</a>
-            </div>
-          </div>
-          <h3 class="text-bold">About Me</h3>
-          <p>Get to know me!</p>
-
-          <div class="clear"></div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a mar-top20">
-            <div class="float-left mar-right20">
-              <a href="#section-contact" onclick="smoothScroll('section-contact');" class="hi-icon hi-icon-mail">contact</a>
-            </div>
-          </div>
-          <h3 class="text-bold">Contact Me!</h3>
-          <p>Fire up a chat anytime!</p>
-          <div class="clear"></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="timeline" class="section" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="align-center">
-            <div class="flexslider timeline-slider">
-              <ul class="slides">
-                <li>
-                  <div class="timeline clearfix">
-                    <div class="mar-bot20">
-                      <img alt="" src="img/timeline/timeline1.webp" class="img-circle">
-                    </div>
-                    <h5>
-												10th from National Gems Higher Secondary School.
-											</h5>
-                    <br/>
-                    <span class="author"> NGHSS <a href="http://nghss.org" target="_blank">nghss.org</a></span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="timeline clearfix">
-                    <div class="mar-bot20">
-                      <img alt="" src="img/timeline/timeline2.webp" class="img-circle">
-                    </div>
-                    <h5>
-												10+2 from National Gems Higher Secondary School.
-												</h5>
-                    <br/>
-                    <span class="author"> NGHSS <a href="http://nghss.org" target="_blank">nghss.org</a></span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="timeline clearfix">
-                    <div class="mar-bot20">
-                      <img alt="" src="img/timeline/timeline3.webp" class="img-circle">
-                    </div>
-                    <h5>
-											B.Tech in Electronics & Instrumentation from Sri Ramaswamy Memorial Institute of Science and Technology.
-											</h5>
-                    <br/>
-                    <span class="author"> SRMIST <a href="https://www.srmist.edu.in" target="_blank">www.srmist.edu.in</a></span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="timeline clearfix">
-                    <div class="mar-bot20">
-                      <img alt="" src="img/timeline/timeline4.webp" class="img-circle">
-                    </div>
-                    <h5>
-											Systems Engineer at Tata Consultancy Services.
-											</h5>
-                    <br/>
-                    <span class="author"> TCS <a href="https://www.tcs.com/" target="_blank">www.tcs.com</a></span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- about -->
-  <section id="section-about" class="section appear clearfix">
-    <div class="container">
-      <div class="row mar-bot40">
-          <div class="col-md-offset-3 col-md-6">
-              <div class="section-header">
-                  <h2 class="section-heading animated" data-animation="bounceInUp">About me.</h2>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-      </div>
-
-          <div class="col-md-3">
-              <div class="team-member">
-                <figure class="member-photo"><img src="img/team/member.webp" style=padding-top:8px alt=""></figure>
-                <div class="team-detail">
-                  <h4>Souvik Chakraborty</h4>
-                  <span>Tinkerer</span>
-                </div>
-              </div>
-            </div>
-
-        <div class="col-md-3">
-          <div class="team-member">
-            <h2 class="section-heading animated" data-animation="bounceInUp">Hello Folks!</h2>
-            <p>B.Tech graduate. Love to make new stuff! Worked on IoT, Python PyQt projects and Mobile App Development(Android Studio) projects. Can code in JAVA ,C++ and PYTHON. Presently working on a native Android app as a personal project. My newfound interests are blockchain and cryptocurrencies! </p>
-            <p>#EDIT: Have joined Tata Consultancy Services as a Systems Engineer! More details coming soon!</p>
-            <p>When I'm not working, I chill with novels and movies. Love Imagine Dragons.&#128525;</p>
-            <p>Apparently, friends with people who are <b>horrible</b> in photography.&#128531;&#128514;</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-        </div>
-  </section>
-
-  <div class="container">
-    <div class="row mar-bot40">
-        <div class="col-md-offset-3 col-md-6">
-            <div class="section-header">
-                <h2 class="section-heading animated" data-animation="bounceInUp">Quick Fact! Cooking up this page required....</h2>
-            </div>
-        </div>
-    </div>
-    </div>
-
-  <!--<h2 class="section-heading animated">Quick Fact! Cooking up this page required...</h2>-->
-  <section id="parallax1" class="section" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row appear stats">
-        <div class="col-md-4">
-          <div class="align-center color-white txt-shadow">
-            <div class="icon">
-              <i class="fa fa-cutlery fa-5x"></i>
-            </div>
-            <strong id="counter-coffee" class="number">11</strong><br>
-            <span class="text">Meals</span>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="align-center color-white txt-shadow">
-            <div class="icon">
-              <i class="fa fa-music fa-5x"></i>
-            </div>
-            <strong id="counter-music" class="number">125</strong><br>
-            <span class="text">MP3 Songs</span>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="align-center color-white txt-shadow">
-            <div class="icon">
-              <i class="fa fa-clock-o fa-5x"></i>
-            </div>
-            <strong id="counter-clock" class="number">834</strong><br>
-            <span class="text">Hard Minutes</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- section works -->
-  <section id="section-works" class="section appear clearfix">
-    <div class="container">
-
-      <div class="row mar-bot40">
-        <div class="col-md-offset-3 col-md-6">
-          <div class="section-header">
-            <h2 class="section-heading animated" data-animation="bounceInUp">Projects</h2>
-            <p>A few of my works. Had a great time making these!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <nav id="filter" class="col-md-12 text-center">
-          <ul>
-            <li style="padding-bottom:1em"><a href="#" class="current btn btn-small" data-filter="*">All</a></li>
-            <li style="padding-bottom:1em"><a href="#" class="btn btn-small" data-filter=".IoT">IoT</a></li>
-            <li style="padding-bottom:1em"><a href="#" class="btn btn-small" data-filter=".Android_App_Dev">Android App Dev</a></li>
-            <li style="padding-bottom:1em"><a href="#" class="btn btn-small" data-filter=".Windows_App_Development">Windows App Dev</a></li>
-          </ul>
-        </nav>
-        <div class="col-md-12">
-          <div class="row">
-            <div class="portfolio-items isotopeWrapper clearfix" id="3">
-
-              <article class="col-md-4 isotopeItem Windows_App_Development">
-                <div class="portfolio-item">
-                  <img src="img/portfolio/img1.webp" alt="">
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="https://github.com/souvikchakraborty98/WACOM/blob/master/README.md" target="_blank">Platform Development To Extract Features From Pen Tablets</a></h5>
-                      <a href="https://github.com/souvikchakraborty98/WACOM/blob/master/README.md" target="_blank" ><i class="fa fa-plus fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem Android_App_Dev">
-                <div class="portfolio-item">
-                  <img src="img/portfolio/img2.webp" alt="">
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="https://github.com/souvikchakraborty98/SMSTest/blob/master/README.md" target="_blank">Automated Sms Forwarding And More.</a></h5>
-                      <a href="https://github.com/souvikchakraborty98/SMSTest/blob/master/README.md" target="_blank" ><i class="fa fa-plus fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-
-              <article class="col-md-4 isotopeItem IoT">
-                <div class="portfolio-item">
-                  <img src="img/portfolio/img3.webp" alt="">
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="https://github.com/souvikchakraborty98/FitBit_Driver_Fatigue/blob/master/README.md" target="_blank">Driver Fatigue Detection And Alarm System.</a></h5>
-                      <a href="https://github.com/souvikchakraborty98/FitBit_Driver_Fatigue/blob/master/README.md" target="_blank" ><i class="fa fa-plus fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem IoT">
-                <div class="portfolio-item">
-                  <img src="img/portfolio/img4.webp" alt="">
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="https://github.com/souvikchakraborty98/AmbientLightSensorLCD/blob/master/README.md" target="_blank">Ambient Light Sensor Module For Any LCD.</a></h5>
-                      <a href="https://github.com/souvikchakraborty98/AmbientLightSensorLCD/blob/master/README.md" target="_blank" ><i class="fa fa-plus fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <section id="clients" class="section clearfix bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-1">
-        </div>
-      <div class="col-lg-2">
-      </div>
-        <div class="col-lg-3 gauche">
-          <img alt="logo" src="img/clients/logo1.webp">
-        </div>
-      
-        <div class="col-lg-5 corps">
-          <img alt="logo" src="img/clients/logo2.webp">
-        </div>
-        <div class="col-lg-2">
-        </div>
-        <!-- <div class="col-md-12">
-          <div class="row">
-            <div class="col-sm-12 align-center">
-              <img alt="logo" src="img/clients/logo1.webp">
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-    
-  </section>
-
-  <!-- contact -->
-   <section id="section-contact" class="section appear clearfix">
-    <div class="container">
-
-      <div class="row mar-bot40">
-        <div class="col-md-offset-3 col-md-6">
-          <div class="section-header">
-            <h2 class="section-heading animated" data-animation="bounceInUp">Contact me</h2>
-            <p>Got a query? Don't hesitate to drop a message. A tap below will do!</p>
-            <li><a href="mailto:souvikch11@gmail.com"><img width="15px" height="10px" src="img/contacts/mailto.webp"> Mail me.</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=919903820826&text=Hey%20there%20Souvik!&source=&data=" target="_blank"><img width="20px" height="20px" src="img/contacts/whatsapp.webp">Ping me on WhatsApp.</a></li>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="footer" class="section footer">
-      <div class="row align-center mar-bot20">
-          <ul class="footer-menu">
-           <p>Get In Touch</p>
-          </ul>
-        </div>
-    <div class="container">
-      <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
-        <div class="col-sm-12 align-center">
-          <ul class="social-network social-circle">
-            <li><a href="https://github.com/souvikchakraborty98" target="_blank" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/souvik-chakraborty-68b803129/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row align-center copyright">
-        <div class="col-sm-12">
-          <p>Made with ❤️ by Souvik Chakraborty, helped by the community.&#128516;</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-
-  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
-  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
-  <script src="js/skrollr.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.localScroll.min.js"></script>
-  <script src="js/stellar.min.js"></script>
-  <script src="js/jquery.appear.js"></script>
-  <script src="js/jquery.flexslider-min.js"></script>
-  <script src="js/smoothscroller.min.js"></script>
-  <script src="js/typewriter.min.js"></script>
-  <script src="js/main.js"></script>
-  
-
-
-
-  <!-- <script src="contactform/contactform.js"></script> -->
-
-
-
+  <script src="script.js"></script>
 
 </body>
 

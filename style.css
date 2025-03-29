@@ -1,0 +1,179 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --accent-color: #ffca28;
+}
+
+body.light-theme {
+    --bg-color: #FAF3E0;
+    --text-color: #3A3A3A;
+    --card-bg: #F8EDEB;
+    --accent-color: #E6A157;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background 0.3s ease, color 0.3s ease;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 599px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+    }
+}
+
+.about-section {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.job-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.linkedin-link {
+    color: var(--accent-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 4px;
+}
+
+.linkedin-link:hover {
+    color: #d98c3a;
+}
+
+.resume-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--bg-color);
+    background: var(--accent-color);
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background: #ffb300;
+    transform: translateY(-2px);
+}
+
+.skills-section {
+    text-align: left;
+}
+
+.skills-section h2 {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills-section ul li i {
+    color: var(--accent-color);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 20px;
+    cursor: pointer;
+}
