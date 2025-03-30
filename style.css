@@ -184,14 +184,13 @@ h1 {
     width: 80px;
     height: 80px;
     background-image: url('img/pixel-duck.gif');
-    /* Replace with actual pixel art */
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #ffca28;
+    /* Fallback color */
     pointer-events: auto;
-    /* Prevent interaction */
     z-index: 1000;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* Center duck initially */
 }

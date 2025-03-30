@@ -7,15 +7,18 @@ function createFavicon() {
     ctx.fillStyle = "#121212";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-
-    ctx.font = "bold 40px Arial";
+    ctx.font = "bold 40px Arial, sans-serif"; // Added fallback font
     ctx.fillStyle = "#ffca28";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText("SC", canvas.width / 2, canvas.height / 2);
 
-
-    document.getElementById("dynamic-favicon").href = canvas.toDataURL("image/png");
+    const favicon = document.getElementById("dynamic-favicon");
+    if (favicon) {
+        favicon.href = canvas.toDataURL("image/png");
+    } else {
+        console.error("Favicon element not found.");
+    }
 }
 
 createFavicon();
@@ -24,8 +27,12 @@ function toggleTheme() {
     let body = document.body;
     body.classList.toggle('light-theme');
     let icon = document.querySelector('.theme-toggle i');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
+    if (icon) {
+        icon.classList.toggle('fa-moon');
+        icon.classList.toggle('fa-sun');
+    } else {
+        console.error("Theme toggle icon not found.");
+    }
 
     localStorage.setItem('theme', body.classList.contains('light-theme') ? 'light' : 'dark');
 }
@@ -33,11 +40,16 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem('theme') === 'light') {
         document.body.classList.add('light-theme');
-        document.querySelector('.theme-toggle i').classList.replace('fa-moon', 'fa-sun');
+        const icon = document.querySelector('.theme-toggle i');
+        if (icon) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
     }
 });
 
 function enableDuckFollower() {
+    if (!confirm("Enable the duck follower feature?")) return; // Added confirmation prompt
+
     let duck = document.createElement("div");
     duck.classList.add("pixel-duck");
     document.body.appendChild(duck);
@@ -82,7 +94,9 @@ function enableDuckFollower() {
         duck.style.left = `${currentX}px`;
         duck.style.top = `${currentY}px`;
 
-        requestAnimationFrame(animateDuck);
+        if (document.body.contains(duck)) {
+            requestAnimationFrame(animateDuck); // Ensure animation stops if duck is removed
+        }
     }
 
     animateDuck();
