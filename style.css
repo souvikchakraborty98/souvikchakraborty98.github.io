@@ -186,7 +186,7 @@ h1 {
     background-image: url('img/pixel-duck.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #ffca28;
+    background-color: transparent;
     /* Fallback color */
     pointer-events: auto;
     z-index: 1000;

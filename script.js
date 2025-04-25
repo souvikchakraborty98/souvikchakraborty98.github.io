@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function enableDuckFollower() {
-    if (!confirm("Enable the duck follower feature?")) return; // Added confirmation prompt
 
     let duck = document.createElement("div");
     duck.classList.add("pixel-duck");
@@ -95,7 +94,7 @@ function enableDuckFollower() {
         duck.style.top = `${currentY}px`;
 
         if (document.body.contains(duck)) {
-            requestAnimationFrame(animateDuck); // Ensure animation stops if duck is removed
+            requestAnimationFrame(animateDuck);
         }
     }
 
